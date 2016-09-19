@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="noParallelTestVersion">
+	<!-- 
+	<test name="firefoxFlights">
+		<parameter name="browserType" value="FIREFOX"/>
+		<classes>
+			<class name="cursoSelenium.data.PageWithParameters"/>
+		</classes>
+	</test> -->
+	
+	 <test name="ChromeTest">
+		<parameter name="browserType" value="CHROME"/>
+		<parameter name="cityFrom" value="Francia"/>
+		<parameter name="cityTo"  value="Italia"/>
+		<parameter name="depdate" value="01/10/2016"/>
+		<parameter name="retdate" value="07/10/2016"/>
+		<classes>
+			<class name="cursoSelenium.data.PageWithParameters"/>
+		</classes>
+	</test>
+	
+	
+	<test name="FirefoxTest">
+		<parameter name="browserType" value="FIREFOX"/>
+		<parameter name="cityFrom" value="Sevilla"/>
+		<parameter name="cityTo"  value="Valencia"/>
+		<parameter name="depdate" value="01/10/2016"/>
+		<parameter name="retdate" value="07/10/2016"/>
+		<classes>
+			<class name="cursoSelenium.data.PageWithParameters"/>
+		</classes>
+	</test> 
+</suite>

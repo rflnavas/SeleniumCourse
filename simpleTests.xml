@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SimpleTestCases">
+	<test name="Simple1">
+		<classes>
+			<class name="cursoSelenium.testng.AssetsReports"/>
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,9 @@
+<suite name="ExtentReportExample">
+	
+	<test name="Proving tests with ExtentReports">
+		<classes>
+			<class name="cursoSelenium.testng.FillInfoTestExtentReport" />
+			<class name="cursoSelenium.testng.Test2ExtReport" />
+		</classes>
+	</test>
+</suite>

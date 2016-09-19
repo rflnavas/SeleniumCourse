@@ -1,0 +1,88 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="TestSuite" parallel="tests" thread-count="2">
+	<listeners>
+		<listener class-name="cursoSelenium.listeners.TestListener"/>
+	</listeners>
+	 
+	 <test name="ChromeTest">
+		<parameter name="browserType" value="CHROME"/>
+		<parameter name="cityFrom" value="Francia"/>
+		<parameter name="cityTo"  value="Italia"/>
+		<parameter name="depdate" value="01/10/2016"/>
+		<parameter name="retdate" value="07/10/2016"/>
+		<classes>
+			<class name="cursoSelenium.data.PageWithParameters"/>
+		</classes>
+	</test>
+	
+	  
+	<test name="FirefoxTest">
+		<parameter name="browserType" value="FIREFOX"/>
+		<parameter name="cityFrom" value="Sevilla"/>
+		<parameter name="cityTo"  value="Valencia"/>
+		<parameter name="depdate" value="01/10/2016"/>
+		<parameter name="retdate" value="07/10/2016"/>
+		<classes>
+			<class name="cursoSelenium.data.PageWithParameters"/>
+		</classes>
+	</test>
+ 	
+	<test name="IETest">
+		<parameter name="browserType" value="IE"/>
+		<parameter name="cityFrom" value="Francia"/>
+		<parameter name="cityTo"  value="Italia"/>
+		<parameter name="depdate" value="01/10/2016"/>
+		<parameter name="retdate" value="07/10/2016"/>
+		<classes>
+			<class name="cursoSelenium.data.PageWithParameters"/>
+		</classes>
+	</test>
+<!-- 
+	<test name="UsingParametersDataProviders">
+		<parameter name="cityFrom" value="Francia"/>
+		<parameter name="cityTo"  value="Italia"/>
+		<parameter name="depdate" value="01/10/2016"/>
+		<parameter name="retdate" value="07/10/2016)"/>
+		<classes>
+			<class name="cursoSelenium.data.PageWithParameters"/>
+		</classes>
+	
+	</test>-->
+<!-- 
+	<test name="ExpediaSearchPage" preserve-order="true">
+		<classes>
+			<class name="cursoSelenium.testng.FillInfoTest2">
+				<methods>
+					<include name="fillBasicInformation"/>
+					<include name="fillAdvancedInformation"/>
+				</methods>
+			</class>
+		</classes>
+	</test>
+ -->	
+	<!-- 
+	<test name="groupingExample" preserve-order="true">
+	
+	<groups>
+		<define name="Frontend and JS">
+			<include name="javascript"/>
+			<include name="frontend"/>
+		</define>
+		<define name="DB and Testing">
+			<include name="db"></include>
+			<include name="testing"></include>
+		</define>
+		<run>
+ 			<include name="java"/> 
+			<include name="Frontend and JS"/>
+			<include name="DB and Testing"></include>
+		</run>
+	</groups>
+	
+	<classes>
+		<class name="cursoSelenium.testng.GroupingTestNG">
+		</class>
+	</classes>
+	
+	</test> -->
+</suite>
